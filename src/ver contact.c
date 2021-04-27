@@ -3,25 +3,29 @@
 #include "..\include\ver contact.h"
 #include "..\include\crear contact.h"
 
-FILE *Contactos;
-
-void ver_contacto()
+void ver_contacto(Contacto *contactos[])
 {
-    Contactos = fopen("Contactos.txt", "r+");
+    
     int i;
-
+    
     do
     {
         for (i = 0; i <= 100; i++)
         {
-            fread(cont.nombre, sizeof(cont.nombre), i, Contactos);
-            printf("Nombre: %s\n", cont.nombre);
-            fread(cont.numero, sizeof(cont.numero), i, Contactos);
-            printf("Nombre: %d\n", cont.numero);
-            fread(cont.direccion, sizeof(cont.direccion), i, Contactos);
-            printf("Nombre: %s\n\n", cont.direccion);
+            if (contactos[i]->full)
+            {
+                printf("Memoria Llena.");
+            }
+            
+
+            fread(contactos[i]->nombre, sizeof(contactos[i]->nombre), i, stdin);
+            printf("Nombre: %s\n", contactos[i]->nombre);
+            fread(contactos[i]->numero, sizeof(contactos[i]->numero), i, stdin);
+            printf("Nombre: %d\n", contactos[i]->numero);
+            fread(contactos[i]->direccion, sizeof(contactos[i]->direccion), i, stdin);
+            printf("Nombre: %s\n\n", contactos[i]->direccion);
         }
-    } while (!feof(Contactos));
+    } while (i < 101);
 
     printf("\nPresiona 'enter' para continuar...");
     getchar();

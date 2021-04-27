@@ -5,12 +5,19 @@
 #include <stddef.h>
 
 /* Estructura de Contactos */
-struct contacto
+typedef struct
 {
-    char *nombre [50];
+    char nombre [50];
     int numero;
-    char *direccion [150];
-}cont;
+    char direccion [150];
+    bool full;
+} Contacto;
+
+/**
+ * @brief 
+ * 
+ */
+void inicializando_estructura();
 
 /**
  * @brief Funcion que se encargara de crear el contacto
@@ -21,7 +28,7 @@ struct contacto
  * @return true 
  * @return false 
  */
-bool crear_contacto(char *nombre, unsigned int numero, char *direccion, bool temp);
+bool crear_contacto();
 
 
 #endif /*CREAR_CONTACT_H*/
