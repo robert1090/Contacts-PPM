@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "../include/menu.h"
-#include "../include/database.h"
 #include "../include/crear contact.h"
 #include "../include/editar contact.h"
 #include "../include/eliminar contact.h"
@@ -12,6 +11,8 @@
 
 int menu() /* Menu Principal */
 {
+	system("color 04");
+
 	unsigned Opcion = 0;
 
 	/* Menu de Opciones de Agenda de Contactos */
@@ -29,7 +30,7 @@ int menu() /* Menu Principal */
 	case REG_CONT:
 		/* Redirige a la Funcion */
 		system("cls||clear");
-		return crear_contacto();
+		crear_contacto();
 		break;
 
 	case EDIT_CONT:
@@ -47,7 +48,7 @@ int menu() /* Menu Principal */
 	case VER_CONT:
 		/* Redirige a la Funcion */
 		system("cls||clear");
-		return;
+		ver_contacto();
 		break;
 
 	case EXIT:
