@@ -5,6 +5,6 @@
  * @brief Esta funcion simplemente leera los contactos existentes
  * 
  */
-void ver_contacto();
+void ver_contacto(Contacto *contactos[]);
 
 #endif /*VER_CONTACT_H*/

@@ -37,7 +37,7 @@ bool crear_contacto()
 
         printf("\nDesea crear otro contacto?(S o N)");
         scanf("%s", opcion);
-        getch();
+        getchar();
 
         contactos[i].full = true;
 
