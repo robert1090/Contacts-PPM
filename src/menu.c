@@ -27,7 +27,7 @@ int menu() /* Menu Principal */
 			"3)Eliminar Contacto\n"
 			"4)Ver Lista de Contactos\n"
 			"5)Salir\n");
-	scanf("%d", &Opcion);
+	scanf("%u", &Opcion);
 	getchar();
 
 	switch (Opcion)
