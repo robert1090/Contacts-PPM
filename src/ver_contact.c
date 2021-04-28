@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "..\include\menu.h"
-#include "..\include\ver_contact.h"
-#include "..\include\crear_contact.h"
+#include "../include/menu.h"
+#include "../include/ver_contact.h"
+#include "../include/crear_contact.h"
 
 void ver_contacto(Contacto *contactos[])
 {
