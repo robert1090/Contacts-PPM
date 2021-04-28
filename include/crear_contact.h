@@ -8,7 +8,7 @@
 typedef struct
 {
     char nombre [50];
-    int numero;
+    char numero [15];
     char direccion [150];
     bool full;
 } Contacto;
@@ -17,7 +17,7 @@ typedef struct
  * @brief 
  * 
  */
-void inicializando_estructura();
+void inicializando_estructura(Contacto *contactos[]);
 
 /**
  * @brief Funcion que se encargara de crear el contacto
@@ -28,7 +28,7 @@ void inicializando_estructura();
  * @return true 
  * @return false 
  */
-bool crear_contacto();
+bool crear_contacto(Contacto *contactos[]);
 
 
 #endif /*CREAR_CONTACT_H*/

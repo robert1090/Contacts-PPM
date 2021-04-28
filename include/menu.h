@@ -15,6 +15,6 @@ enum Opciones{
     ELIM_CONT,
     VER_CONT,
     EXIT
-}
+};
 
 #endif /*MENU_H*/
