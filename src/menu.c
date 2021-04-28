@@ -21,12 +21,12 @@ int menu() /* Menu Principal */
 
 	/* Menu de Opciones de Agenda de Contactos */
 	printf("Bienvenido a la Agenda de Contactos\n"
-			"Por favor, eliga una de las siguientes opcines:\n\n"
-			"1)Registrar Contactos\n"
-			"2)Editar Contacto\n"
-			"3)Eliminar Contacto\n"
-			"4)Ver Lista de Contactos\n"
-			"5)Salir\n");
+		   "Por favor, eliga una de las siguientes opcines:\n\n"
+		   "1)Registrar Contactos\n"
+		   "2)Editar Contacto\n"
+		   "3)Eliminar Contacto\n"
+		   "4)Ver Lista de Contactos\n"
+		   "5)Salir\n");
 	scanf("%u", &Opcion);
 	getchar();
 
@@ -34,7 +34,7 @@ int menu() /* Menu Principal */
 	{
 	case REG_CONT:
 		/* Redirige a la Funcion */
-		system("cls");
+		system("cls||clear");
 		crear_contacto(&contactos);
 		break;
 
@@ -43,7 +43,7 @@ int menu() /* Menu Principal */
 		system("cls||clear");
 		return;
 		break;
-	
+
 	case ELIM_CONT:
 		/* Redirige a la Funcion */
 		system("cls||clear");
@@ -62,7 +62,7 @@ int menu() /* Menu Principal */
 		printf("El Programa se cerrara a continuacion...");
 		getchar();
 		break;
-	
+
 	default:
 		printf("Opcion no valida, cerrando sistema...");
 		getchar();
