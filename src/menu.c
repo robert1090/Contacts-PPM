@@ -34,31 +34,31 @@ int menu() /* Menu Principal */
 	{
 	case REG_CONT:
 		/* Redirige a la Funcion */
-		system("cls");
+		system("cls||clear");
 		crear_contacto(contactos);
 		break;
 
 	case EDIT_CONT:
 		/* Redirige a la Funcion */
-		system("cls");
+		system("cls||clear");
 		return;
 		break;
 	
 	case ELIM_CONT:
 		/* Redirige a la Funcion */
-		system("cls");
+		system("cls||clear");
 		return;
 		break;
 
 	case VER_CONT:
 		/* Redirige a la Funcion */
-		system("cls");
+		system("cls||clear");
 		ver_contacto(&contactos);
 		break;
 
 	case EXIT:
 		/* Causa que el usuario cierre el programa */
-		system("cls");
+		system("cls||clear");
 		printf("El Programa se cerrara a continuacion...");
 		getchar();
 		break;
