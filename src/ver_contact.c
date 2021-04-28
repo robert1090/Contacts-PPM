@@ -5,9 +5,9 @@
 
 void ver_contacto(Contacto *contactos[])
 {
-    
+
     int i;
-    
+
     do
     {
         for (i = 0; i <= 100; i++)
@@ -16,7 +16,6 @@ void ver_contacto(Contacto *contactos[])
             {
                 printf("Memoria Llena.");
             }
-            
 
             fread(contactos[i]->nombre, sizeof(contactos[i]->nombre), i, stdin);
             printf("Nombre: %s\n", contactos[i]->nombre);
