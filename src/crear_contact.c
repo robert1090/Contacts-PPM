@@ -23,7 +23,6 @@ bool crear_contacto(Contacto *contactos[])
 
     do
     {
-        
         printf("\t Crear Contacto\n"
                "\t Ingrese el Nombre del Contacto: ");
         /*scanf("%s", contactos[i]->nombre);*/
