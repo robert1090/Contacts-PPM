@@ -1,11 +1,13 @@
+/* Librerias a usar */
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
-#include "../include/menu.h"
 #include "../include/crear_contact.h"
+#include "../include/menu.h"
 
 #define MAXIMO 100
 
+/* Funcion para inicializar la estructura y su base de datos */
 void inicializando_estructura(Contacto contactos[])
 {
     for (size_t i = 0; i < MAXIMO; i++)
@@ -15,17 +17,16 @@ void inicializando_estructura(Contacto contactos[])
     
 }
 
+/* Funcion que se encargara de crear los contactos */
 void crear_contacto(Contacto contactos[])
 {
-    char opcion;
-    int i = 0;
-    char temp;
+    char opcion; /* Variable de Opciones */
+    int i = 0; 
 
     do
     {
         printf("\t Crear Contacto\n"
                "\t Ingrese el Nombre del Contacto: ");
-        /*scanf("%s", contactos[i].nombre);*/
         fgets(contactos[i].nombre, sizeof(contactos[i].nombre), stdin);
         contactos[i].nombre[strlen(contactos[i].nombre)-1] = '\0';
         
@@ -34,7 +35,6 @@ void crear_contacto(Contacto contactos[])
         getchar();
 
         printf("\n\tIngrese la Direccion: ");
-        /*scanf("%s", contactos[i].direccion);*/
         fgets(contactos[i].direccion, sizeof(contactos[i].direccion), stdin);
         contactos[i].direccion[strlen(contactos[i].direccion)-1] = '\0';
 

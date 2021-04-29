@@ -11,10 +11,11 @@ typedef struct
     char numero [15];
     char direccion [150];
     bool full;
+    bool eliminado;
 } Contacto;
 
 /**
- * @brief 
+ * @brief Inicializacion de la estructura para poder utilizarla como base de datos
  * 
  */
 void inicializando_estructura(Contacto contactos[]);

@@ -11,6 +11,7 @@
 /* Inicializacion del Array */
 #define MAXIMO 100
 
+/* Introduccion al maximo de contacto y su estructura */
 Contacto contactos[MAXIMO];
 
 int menu() /* Menu Principal */
@@ -41,13 +42,13 @@ int menu() /* Menu Principal */
 	case EDIT_CONT:
 		/* Redirige a la Funcion */
 		system("cls||clear");
-		return;
+		editar_contact(contactos);
 		break;
 
 	case ELIM_CONT:
 		/* Redirige a la Funcion */
 		system("cls||clear");
-		return;
+		eliminar_contact(contactos);
 		break;
 
 	case VER_CONT:
@@ -61,13 +62,15 @@ int menu() /* Menu Principal */
 		system("cls||clear");
 		printf("El Programa se cerrara a continuacion...");
 		getchar();
+		exit(-1);
 		break;
 
 	default:
+		/* En caso de no elegir una opcion valida */
 		printf("Opcion no valida, cerrando sistema...");
 		getchar();
 		break;
 	}
 
-	return (0);
+	exit(-1);
 }
