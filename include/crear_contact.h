@@ -17,7 +17,7 @@ typedef struct
  * @brief 
  * 
  */
-void inicializando_estructura(Contacto *contactos[]);
+void inicializando_estructura(Contacto contactos[]);
 
 /**
  * @brief Funcion que se encargara de crear el contacto
@@ -25,10 +25,8 @@ void inicializando_estructura(Contacto *contactos[]);
  * @param nombre Nombre del Contacto
  * @param numero Numero del Contacto
  * @param direccion Direccion del Contacto
- * @return true 
- * @return false 
  */
-bool crear_contacto(Contacto *contactos[]);
+void crear_contacto(Contacto contactos[]);
 
 
 #endif /*CREAR_CONTACT_H*/

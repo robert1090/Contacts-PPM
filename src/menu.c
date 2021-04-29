@@ -35,7 +35,7 @@ int menu() /* Menu Principal */
 	case REG_CONT:
 		/* Redirige a la Funcion */
 		system("cls||clear");
-		crear_contacto(&contactos);
+		crear_contacto(contactos);
 		break;
 
 	case EDIT_CONT:
@@ -53,7 +53,7 @@ int menu() /* Menu Principal */
 	case VER_CONT:
 		/* Redirige a la Funcion */
 		system("cls||clear");
-		ver_contacto(&contactos);
+		ver_contacto(contactos);
 		break;
 
 	case EXIT:
